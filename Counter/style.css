@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a11cb, #8e2de2, #b06ab3);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.counter-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 56px 72px;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.count-display {
+  font-size: 120px;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.count-display.positive {
+  color: #2ecc71;
+}
+
+.count-display.negative {
+  color: #e74c3c;
+}
+
+.button-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  background: #6c63ff;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #574fd6;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(108, 99, 255, 0.5);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.4);
+}
+
+/* + 버튼: 초록색 */
+#increase-btn {
+  background: #2ecc71;
+  box-shadow: 0 8px 20px rgba(46, 204, 113, 0.4);
+}
+
+#increase-btn:hover {
+  background: #27ae60;
+  box-shadow: 0 12px 24px rgba(46, 204, 113, 0.5);
+}
+
+/* - 버튼: 빨간색 */
+#decrease-btn {
+  background: #e74c3c;
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+}
+
+#decrease-btn:hover {
+  background: #c0392b;
+  box-shadow: 0 12px 24px rgba(231, 76, 60, 0.5);
+}
+
+/* 리셋 버튼: 검정색 */
+#reset-btn {
+  background: #000000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#reset-btn:hover {
+  background: #333333;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
